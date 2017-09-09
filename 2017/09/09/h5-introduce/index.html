@@ -37,7 +37,7 @@
     
     <title>
         
-            归档 | 
+            H5的一些简介 | 
         
         Bruce&#39;s blogs
     </title>
@@ -231,15 +231,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档 | Bruce&#39;s blogs">
+    <meta property="og:title" content="H5的一些简介 | Bruce&#39;s blogs">
     <meta property="og:image" content="http://yoursite.com/img/icon.png" />
     <meta property="og:description" content="记录点滴，寻找过往，留下的才是最美的...">
     
 
     
+        <meta property="article:published_time" content="Sat Sep 09 2017 18:37:20 GMT+0800" />
+        <meta property="article:modified_time" content="Sun Sep 10 2017 01:33:32 GMT+0800" />
+    
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="归档 | Bruce&#39;s blogs">
+    <meta name="twitter:title" content="H5的一些简介 | Bruce&#39;s blogs">
     <meta name="twitter:description" content="记录点滴，寻找过往，留下的才是最美的...">
     <meta name="twitter:image" content="http://yoursite.com/img/icon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -247,13 +250,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/archives/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2017/09/09/h5-introduce/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2017/09/09/h5-introduce/index.html",
+    "headline": "H5的一些简介",
+    "datePublished": "Sat Sep 09 2017 18:37:20 GMT+0800",
+    "dateModified": "Sun Sep 10 2017 01:33:32 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Bruce Zhang",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Dream is life, but choose to decide life"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Bruce&#39;s blogs",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/icon.png"
+        }
+    },
+    "keywords": "前端知识、h5、css3、ES6、vue、react、react-native、javscript",
+    "description": "记录点滴，寻找过往，留下的才是最美的...",
+}
+</script>
 
 
     
@@ -287,205 +320,225 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#H5的一些简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">H5的一些简介</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1、新的H5文档类型和字符是？"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1、新的H5文档类型和字符是？</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2、除了audio和video-HTML5还有哪些个媒体标签？"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2、除了audio和video,HTML5还有哪些个媒体标签？</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#3、H5有哪些新增的表单元素？"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3、H5有哪些新增的表单元素？</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#4、H5废弃了哪些HTML4的标签？"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">4、H5废弃了哪些HTML4的标签？</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#5、H5提供了哪些新的API？"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">5、H5提供了哪些新的API？</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#6、H5的存储类型有什么区别？"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">6、H5的存储类型有什么区别？</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#7、H5的应用程序缓存和浏览器缓存有什么区别？"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">7、H5的应用程序缓存和浏览器缓存有什么区别？</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#8、data-属性的作用是什么？"><span class="post-toc-number">1.8.</span> <span class="post-toc-text">8、data-属性的作用是什么？</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#9、什么是事务储存，如何创建一个事务储存？"><span class="post-toc-number">1.9.</span> <span class="post-toc-text">9、什么是事务储存，如何创建一个事务储存？</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#10、我们如何从本地储存中添加和一处数据？"><span class="post-toc-number">1.10.</span> <span class="post-toc-text">10、我们如何从本地储存中添加和一处数据？</span></a></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/09/09/h5-introduce/">H5的一些简介</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            H5的一些简介
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/09/09/h5-introduce/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Bruce Zhang's avatar">
-            </div>
-            <div>
-                <strong>Bruce Zhang</strong>
-                <span>9月 09, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/09/09/Optimize-jQuery/">改善jQuery</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            改善jQuery从外...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/09/09/Optimize-jQuery/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Bruce Zhang's avatar">
-            </div>
-            <div>
-                <strong>Bruce Zhang</strong>
-                <span>9月 09, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/09/09/requireJS/">requireJS</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            引入require 
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/09/09/requireJS/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Bruce Zhang's avatar">
-            </div>
-            <div>
-                <strong>Bruce Zhang</strong>
-                <span>9月 09, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 5; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                H5的一些简介
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Bruce Zhang</strong>
+        <span>9月 09, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=H5的一些简介&url=http://yoursite.com/2017/09/09/h5-introduce/index.html&pic=http://yoursite.com/img/icon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=H5的一些简介&url=http://yoursite.com/2017/09/09/h5-introduce/index.html&via=Bruce Zhang" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/09/09/h5-introduce/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2017/09/09/h5-introduce/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Bruce&#39;s blogs&title=H5的一些简介&summary=记录点滴，寻找过往，留下的才是最美的...&pics=http://yoursite.com/img/icon.png&url=http://yoursite.com/2017/09/09/h5-introduce/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h4 id="H5的一些简介"><a href="#H5的一些简介" class="headerlink" title="H5的一些简介"></a><center>H5的一些简介</center></h4><h5 id="1、新的H5文档类型和字符是？"><a href="#1、新的H5文档类型和字符是？" class="headerlink" title="1、新的H5文档类型和字符是？"></a>1、新的H5文档类型和字符是？</h5><p>文档类型：<code>&lt;!DOCTYPE&gt;</code><br>字符集(很容易忽视的概念)：<code>&lt;meta charset=&quot;UTF-8&quot; /&gt;</code></p>
+<h5 id="2、除了audio和video-HTML5还有哪些个媒体标签？"><a href="#2、除了audio和video-HTML5还有哪些个媒体标签？" class="headerlink" title="2、除了audio和video,HTML5还有哪些个媒体标签？"></a>2、除了audio和video,HTML5还有哪些个媒体标签？</h5><p><code>&lt;audio&gt;&lt;/audio&gt;</code>定义音频;<br><code>&lt;video&gt;&lt;/video&gt;</code>定义视频;<br><code>&lt;source&gt;&lt;/source&gt;</code>定义媒体资源;<br><code>&lt;canvas&gt;&lt;/canvas&gt;</code>定义画布;<br><code>&lt;embed&gt;&lt;/embed&gt;</code>定义外部的可交互的内容或插件，如：flash。</p>
+<h5 id="3、H5有哪些新增的表单元素？"><a href="#3、H5有哪些新增的表单元素？" class="headerlink" title="3、H5有哪些新增的表单元素？"></a>3、H5有哪些新增的表单元素？</h5><p><code>email</code>：用于验证email的格式；<br><code>url</code>：用于验证 URL 地址的格式；<br><code>number</code>：根据你的设置提供选择数字的功能，min属性设置最小值、max属性设置最大值，value属性设置当前值，step属性设定每次增长的值,<span style="color:red">(某些浏览器未支持)</span>；<br><code>range</code>：用于包含一定范围内数字值的输入域，其会以一个滑块的形式展现，min属性设置最小值、max属性设置最大值，value属性设置当前值，如果没有设置，则其默认值的范围是1-100；<br><code>date</code>：选取日、月、年；<br><code>month</code>：选取月、年；<br><code>week</code>：选取周和年；<br><code>time</code>：选取时间（小时和分钟）；<br><code>datetime</code>：选取时间、日、月、年（UTC 时间；<br><code>datetime-local</code>：选取时间、日、月、年（本地时间；<br><code>search</code>：用于搜索域，比如站点搜索或 Google 搜索，为其加上results=”s”属性，则会在搜索框前面加上一个搜索图标；<br><code>tel</code>：验证输入的是否是电话格式的内容<span style="color:red">(还没有浏览器支持)</span>；<br><code>color</code>：提供一个颜色拾取器，供用户选择颜色，并将用户选择的颜色填充到此元素中；</p>
+<h5 id="4、H5废弃了哪些HTML4的标签？"><a href="#4、H5废弃了哪些HTML4的标签？" class="headerlink" title="4、H5废弃了哪些HTML4的标签？"></a>4、H5废弃了哪些HTML4的标签？</h5><p>样式元素：<code>basefont、big、center、font、s、strike、tt、u</code><br>frame框架：<code>frame框架frameset、frame、noframes</code><br>废除<code>rb</code>，使用<code>ruby</code>替代。<br>废除<code>acronym</code>，使用<code>abbr</code>替代。<br>废除<code>dir</code>，使用<code>ul</code>替代。<br>废除<code>isindex</code>，使用<code>form</code>与<code>input</code>相结合的方式替代<br>废除<code>listing</code>，使用<code>pre</code>替代<br>废除<code>xmp</code>，使用<code>code</code>替代<br>废除<code>nextid</code>，使用<code>guids</code><br>废除<code>plaintex</code>，使用<code>“text/plian”（无格式正文）MIME</code>类型替代。</p>
+<h5 id="5、H5提供了哪些新的API？"><a href="#5、H5提供了哪些新的API？" class="headerlink" title="5、H5提供了哪些新的API？"></a>5、H5提供了哪些新的API？</h5><p>多媒体：<code>video、audio、</code><br>游戏：<code>canvas、webgl、</code><br>存储：<code>localstorage、sessonstorage、websql、indexedDB</code><br>网络：<code>websocket</code><br>And以下：<br>1：canvas，不用多说，可以画出很多绚丽的图形，甚至可以直接做出伪3D游戏。<br>2：媒体控制，也很好理解(直译就是回放功能，假如只用html5.0以下的标签写，以前的音乐播放是不可能实现滚动条的。)<br>3：离线网页程序，可以把资源文件完全缓存在客户端，并且通过js的一些方法清空缓存<br>4：文档编辑，应该是更好的支持对文档的编辑。<br>5：拖动，可以将文件拖动到某些区域上传<br>6：跨文档请求，websocket，一种更加高效的通讯方式<br>7：历史管理，可以通过js管理和插入历史记录<br>8：MIME头自定义<br>9：客户端数据存储，localstoage sessionstoage<br>10：地理位置共享<br>11：本地数据库<br>12：索引数据库</p>
+<h5 id="6、H5的存储类型有什么区别？"><a href="#6、H5的存储类型有什么区别？" class="headerlink" title="6、H5的存储类型有什么区别？"></a>6、H5的存储类型有什么区别？</h5><p>HTML5能够本地存储数据，以前的版本是使用cookies存储的。而却HTML5提供了两种本地存储方案：<br><span style="width: 20px; display: inline-block;"></span>(1)、<a href="http://www.cnblogs.com/shw13/p/5695039.html" target="_blank" rel="external">localStorage</a>—-没有时间限制的数据存储，关闭浏览器也不会过期；<br><span style="width: 20px; display: inline-block;"></span>(2)、<a href="http://www.cnblogs.com/firstForEver/p/5301830.html" target="_blank" rel="external">sessionStorage</a>—-针对一个session的数据存储，同一个会话中的页面才能访问，并且当会话结束后数据随之销毁；</p>
+<h5 id="7、H5的应用程序缓存和浏览器缓存有什么区别？"><a href="#7、H5的应用程序缓存和浏览器缓存有什么区别？" class="headerlink" title="7、H5的应用程序缓存和浏览器缓存有什么区别？"></a>7、H5的应用程序缓存和浏览器缓存有什么区别？</h5><p>HTML5 引入了应用程序缓存，这意味着 web 应用可进行缓存，并可在没有因特网连接时进行访问。<br>应用程序缓存为应用带来三个优势：<br>　　离线浏览 - 用户可在应用离线时使用它们<br>　　速度 - 已缓存资源加载得更快<br>　　减少服务器负载 - 浏览器将只从服务器下载更新过或更改过的资源。<br>实现借助于 manifest 文件<br><code>&lt;html manifest=&quot;demo.appcache&quot;&gt;</code></p>
+<h5 id="8、data-属性的作用是什么？"><a href="#8、data-属性的作用是什么？" class="headerlink" title="8、data-属性的作用是什么？"></a>8、data-属性的作用是什么？</h5><p>data-为前端开发者提供自定义的属性，这些属性集可以通过对象的dataset属性获取，不支持该属性的浏览器可以通过 getAttribute方法获取。<br>在另一篇中提到过像<code>data-属性</code>这种自定义属性，如果在jQuery中最好用<code>attr()</code>获取，而像一些标签的固有属性，如<code>&lt;input type=&#39;text&#39; checked=&#39;checked&#39;/&gt;</code>中的checked属性，最好就用<code>prop()</code>方法。</p>
+<h5 id="9、什么是事务储存，如何创建一个事务储存？"><a href="#9、什么是事务储存，如何创建一个事务储存？" class="headerlink" title="9、什么是事务储存，如何创建一个事务储存？"></a>9、什么是事务储存，如何创建一个事务储存？</h5><p><a href="http://www.cnblogs.com/RascallySnake/archive/2010/05/17/1737298.html" target="_blank" rel="external">点，点，点，点我…</a></p>
+<h5 id="10、我们如何从本地储存中添加和一处数据？"><a href="#10、我们如何从本地储存中添加和一处数据？" class="headerlink" title="10、我们如何从本地储存中添加和一处数据？"></a>10、我们如何从本地储存中添加和一处数据？</h5><p>简单实现：<br>当在console(控制台)中输入<code>window.localStorage</code>时，如下图：<br><img src="./localstorage01.png" alt="Alt text"><br>然后输入<code>localStorage.setItem(&#39;name&#39;,&#39;bruce&#39;)</code>，再输入<code>window.localStorage</code>时，此为在本地存储中添加一条数据<code>name: bruce</code>，同时<code>length</code>也变成了8：<br><img src="./localstorage02.png" alt="Alt text"></p>
+<p>然后输入<code>localStorage.removeItem(&#39;name&#39;,&#39;bruce&#39;)</code>，再输入<code>window.localStorage</code>时，<code>name: bruce</code>这条数据被删了，同时<code>length</code>也变成了8：<br><img src="./localstorage03.png" alt="Alt text"></p>
+<p>来一条<a href="http://blog.csdn.net/onebigday/article/details/5429868" target="_blank" rel="external">正则表达式集合</a>;</p>
+
+        
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/09/09/Optimize-jQuery/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     

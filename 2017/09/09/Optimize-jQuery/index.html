@@ -37,7 +37,7 @@
     
     <title>
         
-            归档 | 
+            改善jQuery | 
         
         Bruce&#39;s blogs
     </title>
@@ -231,15 +231,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档 | Bruce&#39;s blogs">
+    <meta property="og:title" content="改善jQuery | Bruce&#39;s blogs">
     <meta property="og:image" content="http://yoursite.com/img/icon.png" />
     <meta property="og:description" content="记录点滴，寻找过往，留下的才是最美的...">
     
 
     
+        <meta property="article:published_time" content="Sat Sep 09 2017 16:14:06 GMT+0800" />
+        <meta property="article:modified_time" content="Sat Sep 09 2017 16:14:06 GMT+0800" />
+    
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="归档 | Bruce&#39;s blogs">
+    <meta name="twitter:title" content="改善jQuery | Bruce&#39;s blogs">
     <meta name="twitter:description" content="记录点滴，寻找过往，留下的才是最美的...">
     <meta name="twitter:image" content="http://yoursite.com/img/icon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -247,13 +250,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/archives/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2017/09/09/Optimize-jQuery/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2017/09/09/Optimize-jQuery/index.html",
+    "headline": "改善jQuery",
+    "datePublished": "Sat Sep 09 2017 16:14:06 GMT+0800",
+    "dateModified": "Sat Sep 09 2017 16:14:06 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Bruce Zhang",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Dream is life, but choose to decide life"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Bruce&#39;s blogs",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/icon.png"
+        }
+    },
+    "keywords": "前端知识、h5、css3、ES6、vue、react、react-native、javscript",
+    "description": "记录点滴，寻找过往，留下的才是最美的...",
+}
+</script>
 
 
     
@@ -287,205 +320,243 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#改善jQuery"><span class="post-toc-number">1.</span> <span class="post-toc-text">改善jQuery</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#从外链引入jQuery"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">从外链引入jQuery</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#整合所有的脚本并缩减它们"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">整合所有的脚本并缩减它们</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#通过缓存最小化选择操作"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">通过缓存最小化选择操作</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#最小化DOM操作，处理DOM插入操作时，将需要的内容包装在一个元素中"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">最小化DOM操作，处理DOM插入操作时，将需要的内容包装在一个元素中</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#尽可能使用IDs而不是classes，并给选择器提供上下文"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">尽可能使用IDs而不是classes，并给选择器提供上下文</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#正确使用方法链"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">正确使用方法链</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#学会正确使用效果"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">学会正确使用效果</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#了解事件代理和时间委托"><span class="post-toc-number">1.8.</span> <span class="post-toc-text">了解事件代理和时间委托</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#利用classes存储状态，利用jQuery内置的data-方法存储状态"><span class="post-toc-number">1.9.</span> <span class="post-toc-text">利用classes存储状态，利用jQuery内置的data()方法存储状态</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#写你自己的选择器"><span class="post-toc-number">1.10.</span> <span class="post-toc-text">写你自己的选择器</span></a></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/09/09/h5-introduce/">H5的一些简介</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            H5的一些简介
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/09/09/h5-introduce/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Bruce Zhang's avatar">
-            </div>
-            <div>
-                <strong>Bruce Zhang</strong>
-                <span>9月 09, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/09/09/Optimize-jQuery/">改善jQuery</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            改善jQuery从外...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/09/09/Optimize-jQuery/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Bruce Zhang's avatar">
-            </div>
-            <div>
-                <strong>Bruce Zhang</strong>
-                <span>9月 09, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/09/09/requireJS/">requireJS</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            引入require 
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/09/09/requireJS/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Bruce Zhang's avatar">
-            </div>
-            <div>
-                <strong>Bruce Zhang</strong>
-                <span>9月 09, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 5; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                改善jQuery
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Bruce Zhang</strong>
+        <span>9月 09, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=改善jQuery&url=http://yoursite.com/2017/09/09/Optimize-jQuery/index.html&pic=http://yoursite.com/img/icon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=改善jQuery&url=http://yoursite.com/2017/09/09/Optimize-jQuery/index.html&via=Bruce Zhang" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/09/09/Optimize-jQuery/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2017/09/09/Optimize-jQuery/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Bruce&#39;s blogs&title=改善jQuery&summary=记录点滴，寻找过往，留下的才是最美的...&pics=http://yoursite.com/img/icon.png&url=http://yoursite.com/2017/09/09/Optimize-jQuery/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h4 id="改善jQuery"><a href="#改善jQuery" class="headerlink" title="改善jQuery"></a><center>改善jQuery</center></h4><h5 id="从外链引入jQuery"><a href="#从外链引入jQuery" class="headerlink" title="从外链引入jQuery"></a>从外链引入jQuery</h5><p>比如从bootstrap中文网中的Open CDN中<br><code>&lt;script src=&quot;http://cdn.bootcss.com/jquery/3.1.1/jquery.js&quot;&gt;&lt;/script&gt;</code></p>
+<h5 id="整合所有的脚本并缩减它们"><a href="#整合所有的脚本并缩减它们" class="headerlink" title="整合所有的脚本并缩减它们"></a>整合所有的脚本并缩减它们</h5><p>这是JavaScript的一个常见技巧。<br>浏览器不能同时加载JS脚本（大多数情况下），这意味着如果你同一时间加载很多脚本的话，将减缓页面的加载速度。因此，如果每个页面都要加载这些脚本，你应该考虑在发布之前将这些脚本整合成一个稍大的JS脚本。<br>一些jQuery插件已经最小化了，但是你应该打包你的JS脚本和那些没有缩减过的脚本，使用打包工具比如：<a href="https://github.com/webpack/webpack" target="_blank" rel="external">WebPack(主流)</a>、<a href="https://github.com/SaitoWu/linner" target="_blank" rel="external">Linner</a>、<a href="https://github.com/umdjs/umd" target="_blank" rel="external">UMD</a>…</p>
+<h5 id="通过缓存最小化选择操作"><a href="#通过缓存最小化选择操作" class="headerlink" title="通过缓存最小化选择操作"></a>通过缓存最小化选择操作</h5><p>比如将你要重复操作的元素缓存起来<br> <code>var $select = $(&#39;.operation-element&#39;)</code> </p>
+<h5 id="最小化DOM操作，处理DOM插入操作时，将需要的内容包装在一个元素中"><a href="#最小化DOM操作，处理DOM插入操作时，将需要的内容包装在一个元素中" class="headerlink" title="最小化DOM操作，处理DOM插入操作时，将需要的内容包装在一个元素中"></a>最小化DOM操作，处理DOM插入操作时，将需要的内容包装在一个元素中</h5><p>比如你需要在一个ul标签中插入n个li元素，性能较差的代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">for(var i = 0; i &lt; n; i ++) &#123;</div><div class="line">	$(&apos;ul&apos;).append(&apos;&lt;li&gt;&lt;/li&gt;&apos;);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>优化过后代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var str = &apos;&apos;;</div><div class="line">for(var i = 0; i &lt; n; i ++) &#123;</div><div class="line">	str += &apos;&lt;li&gt;&lt;/li&gt;&apos; </div><div class="line">&#125;</div><div class="line">$(&apos;ul&apos;).append(str);</div></pre></td></tr></table></figure></p>
+<p>这样虽然减少了append操作，但是还是插入了n个li，所以讲li包在一个ul中，然后再插入另一个div当中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var str = &apos;&apos;;</div><div class="line">for(var i = 0; i &lt; n; i ++) &#123;</div><div class="line">	str += &apos;&lt;li&gt;&lt;/li&gt;&apos; </div><div class="line">&#125;</div><div class="line">var $ul = &apos;&lt;ul&gt;&apos;+ str +&apos;&lt;/ul&gt;&apos;</div><div class="line">$(&apos;body&apos;).append($ul);</div></pre></td></tr></table></figure></p>
+<h5 id="尽可能使用IDs而不是classes，并给选择器提供上下文"><a href="#尽可能使用IDs而不是classes，并给选择器提供上下文" class="headerlink" title="尽可能使用IDs而不是classes，并给选择器提供上下文"></a>尽可能使用IDs而不是classes，并给选择器提供上下文</h5><p>id选择器在一个页面中是唯一的，所以当你id选择器查找dom节点时，会更快的找到；</p>
+<p>如果你用的class选择器寻找，首先会遍历所有的DOM节点，然后找到所有具有这个class选择器的节点数组，一步步往下，大大的减慢了加载速度；</p>
+<p>而且在用class选择器时，应该给出它的父节点元素的类名，这样就减少了遍历次数，从而优化性能；</p>
+<h5 id="正确使用方法链"><a href="#正确使用方法链" class="headerlink" title="正确使用方法链"></a>正确使用方法链</h5><p>一个能够进行方法链式调用的自定义jQuery函数也很容易。你所做的就是要写个能修改元素并返回元素的函数。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$.fn.makeRed = function() &#123;   </div><div class="line">    return $(this).css(&apos;background&apos;, &apos;red&apos;);   </div><div class="line">&#125;   </div><div class="line">$(&apos;#myTable&apos;).find(&apos;.firstColumn&apos;).makeRed().append(&apos;hello&apos;);</div></pre></td></tr></table></figure></p>
+<h5 id="学会正确使用效果"><a href="#学会正确使用效果" class="headerlink" title="学会正确使用效果"></a>学会正确使用效果</h5><p>学会正确使用jQuery中已经封装好的效果方法如：<code>slideUp()、 slideDown、 fadeIn()、fadeOut()、animate()</code>等等。</p>
+<h5 id="了解事件代理和时间委托"><a href="#了解事件代理和时间委托" class="headerlink" title="了解事件代理和时间委托"></a>了解事件代理和时间委托</h5><p>jQuery能够更容易得向DOM元素无缝添加事件。这是很棒的特性，然而向元素添加太多的事件是效率很差的。在很多情况下事件代理允许你用少量的事件实现同样的目的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(&apos;ul li&apos;).on(&apos;click&apos;, function() &#123;</div><div class="line">	var $this = $(this);</div><div class="line">	$this.addClass(&apos;rotate-45deg&apos;).siblings().removeClass(&apos;rotate-45deg&apos;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>这样写的话，有多少个这个ul中有多少个li就绑定多少个click事件，所以不够好：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$(&apos;ul li&apos;).on(&apos;click&apos;, function(e) &#123;</div><div class="line">	var clicked = $(e.target);</div><div class="line">	var $this = $(this);</div><div class="line">	clicked.addClass(&apos;rotate-45deg&apos;).siblings().removeClass(&apos;rotate-45deg&apos;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>‘e’包含了事件的信息，包括了实际接收到click事件的目标元素，详情请查看<a href="http://www.w3school.com.cn/jsref/dom_obj_event.asp" target="_blank" rel="external">event</a>。</p>
+<p>事件代理带来了另外一个好处。正常情况下，在你往一个元素集合绑定一个事件，该事件仅仅只是绑定到这些集合元素上。如果你向DOM中添加了新的元素，尽管这些新元素被选择器所匹配，但是这些新元素并不会绑定上事件处理，因此不会有事件发生。</p>
+<p>当使用事件代理时，你能够在事件被DOM绑定后仍然可以添加多个被匹配的元素到其中，而它们同样能够正常工作。</p>
+<p>另一种方式事件委托：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(&apos;ul&apos;).on(&apos;click&apos;, &apos;li&apos;, function(e) &#123;</div><div class="line">	var $this = $(this);</div><div class="line">	clicked.addClass(&apos;rotate-45deg&apos;).siblings().removeClass(&apos;rotate-45deg&apos;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>将事件绑定到li的父元素ul上，然后点击li通过冒泡来触发事件。</p>
+<h5 id="利用classes存储状态，利用jQuery内置的data-方法存储状态"><a href="#利用classes存储状态，利用jQuery内置的data-方法存储状态" class="headerlink" title="利用classes存储状态，利用jQuery内置的data()方法存储状态"></a>利用classes存储状态，利用jQuery内置的data()方法存储状态</h5><p>jQuery提供了内置的data()方法，与DOM元素不同的是，它可以用来存储key/value类型的数据：<br><code>$(&#39;#div&#39;).data(&#39;currentState&#39;, &#39;off&#39;);</code></p>
+<h5 id="写你自己的选择器"><a href="#写你自己的选择器" class="headerlink" title="写你自己的选择器"></a>写你自己的选择器</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$.extend($.expr[&apos;:&apos;], &#123;   </div><div class="line">    over100px: function(a) &#123;   </div><div class="line">        return $(a).width() &gt; 100;   </div><div class="line">    &#125;   </div><div class="line">&#125;);   </div><div class="line">  </div><div class="line">$(&apos;.box:over100px&apos;).click(function() &#123;   </div><div class="line">    alert(&apos;The element you clicked is over 100 pixels width&apos;);   </div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>代码的前一部分创建一个自定义的选择器，它可以找出所有宽度超过100px的元素。接下来的代码仅仅是将click事件绑定到使用该选择器查找出来的那些元素上。</p>
+<p>本文摘自： <a href="http://www.cnblogs.com/huyh/archive/2009/03/30/1422976.html#tip10" target="_blank" rel="external">[翻译]25招改善你的jQuery - [1]</a><br>原文地址： <a href="http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx" target="_blank" rel="external">http://www.tvidesign.co.uk/blog/improve-your-jquery-25-excellent-tips.aspx</a></p>
+
+        
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/09/09/h5-introduce/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/09/09/requireJS/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
